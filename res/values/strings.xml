@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EMV Reader</string>
+    <string name="aiddescription">NFC_Test aiddescription</string>
+    <string name="txt_please_scan_your_card">Please scan your card</string>
+    <string name="err_unsupported_card">Unsupported card type</string>
+    <string name="msg_nfc_disabled">NFC is disabled now. Please enable NFC</string>
+    <string name="msg_application_finish">NFC is disabled. Application will finish now</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="10dp">
+
+    <TextView
+            android:id="@+id/txt_message"
+            android:text="@string/txt_please_scan_your_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"/>
+
+    <LinearLayout
+            android:id="@+id/layout_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:text="Card number: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/txt_card_number"
+                android:text="123456"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_exp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_card_number"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:text="Expires at: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/txt_exp_date"
+                android:text="99/99"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_exp_date"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:text="Holder name: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <TextView
+                android:id="@+id/txt_holder_name"
+                android:text="Name/Surname"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>
+
